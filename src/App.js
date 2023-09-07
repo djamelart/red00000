@@ -23,7 +23,7 @@ import SocketClient from './SocketClient'
 
 import { getNotifies } from './redux/actions/notifyAction'
 import CallModal from './components/message/CallModal'
-import Peer from 'peerjs'
+ 
 import Postspendientesss from './pages/administracion/postspendientesss'
 import Blockposts from './pages/bloqueos/blockposts';
 import Blockcomments from './pages/bloqueos/blockcomments';
@@ -77,14 +77,7 @@ function App() {
   }, [])
 
 
-  useEffect(() => {
-    const newPeer = new Peer(undefined, {
-      path: '/', secure: true
-    })
-
-    dispatch({ type: GLOBALTYPES.PEER, payload: newPeer })
-  }, [dispatch])
-
+ 
 
   return (
     <Router>
